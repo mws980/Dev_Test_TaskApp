@@ -1,0 +1,52 @@
+﻿@model DevTest_TasksWeb.Models.Tasks
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Tasks</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Task_Status" class="control-label"></label>
+                <select asp-for="Task_Status" class="form-control">
+                    <option value="">-- Select Status --</option>
+                    <option value="NotStarted">Not Started</option>
+                    <option value="InProgress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+                <span asp-validation-for="Task_Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DueAt" class="control-label"></label>
+                <input asp-for="DueAt" class="form-control" />
+                <span asp-validation-for="DueAt" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-5">
+    <a asp-action="Index" class="btn btn-dark">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
