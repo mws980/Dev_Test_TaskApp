@@ -98,7 +98,7 @@ bash
 dotnet restore
 Configure database settings in appsettings.json files for both projects
 
-Apply database migrations (if using Entity Framework):
+Apply database migrations 
 
 bash
 dotnet ef database update
