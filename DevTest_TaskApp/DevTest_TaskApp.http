@@ -1,0 +1,6 @@
+@DevTest_TaskApi_HostAddress = http://localhost:5111
+
+GET {{DevTest_TaskApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
