@@ -135,11 +135,7 @@ Database migrations are managed in DevTest_TaskApp/Migrations/. To add new migra
 bash
 dotnet ef migrations add MigrationName
 dotnet ef database update
-License
-Specify your license here.
 
 Author
 Created by mws980
 
-Code
-Please confirm you want Copilot to make this change in the mws980/Dev_Test_TaskApp repository on branch main.
