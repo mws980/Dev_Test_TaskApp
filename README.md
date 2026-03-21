@@ -10,10 +10,6 @@ Configuration Guide - Notes about settings files
 Development Tips - Including testing and database migration information
 The README is now live on your repository and provides clear documentation for anyone looking to understand, set up, or contribute to your task management application.
 
-Make these code changes?
-README.md
-
-md
 # Dev Test TaskApp
 
 A comprehensive .NET solution for task management consisting of an API backend and MVC web application.
